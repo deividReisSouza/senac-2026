@@ -13,11 +13,12 @@
 $color-background: #ffefefc0;
 $color-text: #000000;
 $color-title:#333333;
+$color-paragraph: #030539;
 $color-link:#2212b1;
 
-
-$color-primary: #240fe5;
-$color-secondary: #fefefe;
+$color-primary: #51887a;
+$color-secondary: #02523e;
+$color-buttom:#95e0cd;
 $color-dark:#000000;
 $color-white:#FFFFFF;
 
@@ -144,7 +145,7 @@ h2 {
 
 
 p {
-    color: $color-secondary;
+    color: $color-paragraph;
     font-family: $font-secondary;
 }
 
@@ -191,6 +192,10 @@ a {
    9. MAX WIDTH
    ========================================================= */
 
+.max-w-sm {
+    max-width: 355px;
+}
+
 .max-w-md {
     max-width: 500px;
 }
@@ -198,6 +203,10 @@ a {
 
 .max-w-lg {
     max-width: 800px;
+}
+
+.max-h-md{
+    max-height: 500px;
 }
 
 
@@ -443,7 +452,7 @@ $text-alignments: (
 }
 
 .h-full{
-    height: 100%;
+    height: 100vh;
 }
 
 
@@ -461,6 +470,10 @@ $text-alignments: (
 
 .column{
     flex-direction: column;
+}
+
+.hidden{
+    display: none;
 }
 
 

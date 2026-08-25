@@ -1,36 +1,38 @@
-<h2>Cadastro</h2>
-<pre id="welcomeUser"></pre>
-<h2>Usuarios cadastrados: </h2>
+<html>
 
+<head>
+    <tittle>Painel</tittle>
 
-<p>Preencha o formulário abaixo:</p>
+    <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
 
-<form id="formRegister" class="column flex ">
-    Nome:<input 
-    id="cName"
-    type="text" 
-    placeholder="Nome completo"/><br>
+    <h3 id="oi">Bem vindo, está é a tela de Painel</h3>
 
-    Email:<input 
-    id="cMail"
-    type="email" 
-    placeholder="@gmail.com"/><br>
+    <div class="h-full flex">
 
-    Senha:<input
-    id="cPass" 
-    type="password" 
-    placeholder="senhA1@"/><br>
-    
-    Data de Nascimento:<input 
-    id="cDate"
-    type="date"/><br>
-    <a class="mt-5 bg-primary text-bluecian text-center rounded-md py-2">Salvar</a>
+        <div id="modalRegister" class="fixed p-5 bg-primary rounded-lg shadow-md column hidden">
+            <form id="formRegister" class="flex column">
+                Nome:<input id="cName" type="text" placeholder="Nome completo" /><br>
 
-</form>
-<pre id="listaUsers"></pre>
+                Email:<input id="cMail" type="email" placeholder="@gmail.com" /><br>
+
+                Senha:<input id="cPass" type="password" placeholder="senhA1@" /><br>
+
+                Data de Nascimento:<input id="cDate" type="date" /><br>
+                <a class="mt-5 bg-primary text-bluecian text-center rounded-md py-2">Salvar</a>
+
+            </form>
+            <pre id="listaUsers"></pre>
+
+        </div>
+    </div>
+
+<a id="addUser" class="rounded-full bg-primary text-white px-4 py-3 fixed bottom-0 right-0"> + </a>
+
+    <script src="user.js"></script>
+    <script src="painel.js"></script>
 </body>
-<script src="user.js">
-    
-</script>
+
+</html>

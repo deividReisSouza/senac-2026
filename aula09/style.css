@@ -55,7 +55,7 @@ h2 {
 }
 
 p {
-  color: #fefefe;
+  color: #030539;
   font-family: "inter", extra light, normal;
 }
 
@@ -95,12 +95,20 @@ a {
 /* =========================================================
    9. MAX WIDTH
    ========================================================= */
+.max-w-sm {
+  max-width: 355px;
+}
+
 .max-w-md {
   max-width: 500px;
 }
 
 .max-w-lg {
   max-width: 800px;
+}
+
+.max-h-md {
+  max-height: 500px;
 }
 
 /* =========================================================
@@ -500,11 +508,11 @@ a {
    .bg-dark
    ========================================================= */
 .bg-primary {
-  background-color: #240fe5;
+  background-color: #51887a;
 }
 
 .bg-secondary {
-  background-color: #fefefe;
+  background-color: #02523e;
 }
 
 .bg-dark {
@@ -539,11 +547,11 @@ a {
    hover:bg-dark
    ========================================================= */
 .hover\:bg-primary:hover {
-  background-color: #240fe5;
+  background-color: #51887a;
 }
 
 .hover\:bg-secondary:hover {
-  background-color: #fefefe;
+  background-color: #02523e;
 }
 
 .hover\:bg-dark:hover {
@@ -570,11 +578,11 @@ a {
    14. BACKGROUND + FOCUS
    ========================================================= */
 .focus\:bg-primary:focus {
-  background-color: #240fe5;
+  background-color: #51887a;
 }
 
 .focus\:bg-secondary:focus {
-  background-color: #fefefe;
+  background-color: #02523e;
 }
 
 .focus\:bg-dark:focus {
@@ -601,11 +609,11 @@ a {
    15. BACKGROUND + ACTIVE
    ========================================================= */
 .active\:bg-primary:active {
-  background-color: #240fe5;
+  background-color: #51887a;
 }
 
 .active\:bg-secondary:active {
-  background-color: #fefefe;
+  background-color: #02523e;
 }
 
 .active\:bg-dark:active {
@@ -640,11 +648,11 @@ a {
 }
 
 .text-primary {
-  color: #240fe5;
+  color: #51887a;
 }
 
 .text-secondary {
-  color: #fefefe;
+  color: #02523e;
 }
 
 /* =========================================================
@@ -659,11 +667,11 @@ a {
 }
 
 .hover\:text-primary:hover {
-  color: #240fe5;
+  color: #51887a;
 }
 
 .hover\:text-secondary:hover {
-  color: #fefefe;
+  color: #02523e;
 }
 
 /* =========================================================
@@ -716,7 +724,7 @@ a {
 }
 
 .h-full {
-  height: 100%;
+  height: 100vh;
 }
 
 /* =========================================================
@@ -732,6 +740,10 @@ a {
 
 .column {
   flex-direction: column;
+}
+
+.hidden {
+  display: none;
 }
 
 /* =========================================================
@@ -926,7 +938,7 @@ a {
 }
 
 .focus\:outline-primary:focus {
-  outline: 2px solid #240fe5;
+  outline: 2px solid #51887a;
   outline-offset: 2px;
 }
 
