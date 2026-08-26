@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <tittle>Painel do Usuário</tittle>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h3 id="oi"></h3>
+    <div id="modalRegister" class="fixed top-0 right-0 bottom-0 left-0 bg-secondary items-center justify-center shadow-md 
+    column hidden text-white">
+
+        <div class="relative max-w-md w-full p-5 
+        bg-primary rounded-lg shadow-md flex column">
+
+            <a id="btClose" class="bg-red absolute top-0 right-0 px-4 py-3 rounded-full text-white hover:shadow-inner">X</a>
+            <h2 class="text-white">Novo Usuário</h2>
+            <form class="flex column">
+                Nome:<input id="cName" type="text" placeholder="Nome completo" /><br>
+
+                Email:<input id="cMail" type="email" placeholder="@gmail.com" /><br>
+
+                Senha:<input id="cPass" type="password" placeholder="senhA1@" /><br>
+
+                Data de Nascimento:<input id="cDate" type="date" /><br>
+                <a id="formRegister" class="mt-5 bg-secondary text-white text-center rounded-md py-2">Salvar</a>
+            </form>
+
+        </div>
+    </div>
+    <pre id="listaUsers"></pre>
+    <a id="addUser" class="rounded-full bg-primary text-white px-4 py-3 fixed bottom-0 right-0 hover:shadow-inner"> +
+    </a>
+    <script src="user.js"></script>
+    <script src="painel.js"></script>
+</body>
+
+</html>
