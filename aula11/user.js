@@ -4,9 +4,22 @@ var oi = document.getElementById("oi");
 if (oi && userOk) oi.innerHTML = "Olá " + userOk?.nome
 
 var listaUsers = document.getElementById("listaUsers");
-if (listaUsers){
+if (listaUsers) {
     users.forEach((u) => {
-        console.log(u)
+        let tdName = document.createElement("td");
+        tdName.innerHTML = u.nome;
+
+        let tdEmail = document.createElement("td");
+        tdEmail.innerHTML = u.email;
+
+        let tdAction = document.createElement("td");
+        tdAction.innerHTML = "X - V";
+        let tr = document.createElement("tr")
+        tr.appendChild(tdName);
+        tr.appendChild(tdEmail);
+        tr.appendChild(tdAction);
+
+        listaUsers.appendChild(tr);
     });
 }
 var formR = document.getElementById("formRegister");
