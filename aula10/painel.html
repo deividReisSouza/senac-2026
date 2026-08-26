@@ -8,13 +8,14 @@
 
 <body>
     <h3 id="oi"></h3>
-    <div id="modalRegister" class="fixed top-0 right-0 bottom-0 left-0 bg-secondary items-center justify-center shadow-md 
-    column hidden text-white">
+    <div id="modalRegister" class="fixed top-0 right-0 bottom-0 left-0 items-center justify-center shadow-md 
+    column hidden text-white bg-black-50 z-50">
 
         <div class="relative max-w-md w-full p-5 
         bg-primary rounded-lg shadow-md flex column">
 
-            <a id="btClose" class="bg-red absolute top-0 right-0 px-4 py-3 rounded-full text-white hover:shadow-inner">X</a>
+            <a id="btClose"
+                class="bg-red absolute top-0 right-0 px-4 py-3 rounded-full text-white hover:shadow-inner ">X</a>
             <h2 class="text-white">Novo Usuário</h2>
             <form class="flex column">
                 Nome:<input id="cName" type="text" placeholder="Nome completo" /><br>
@@ -29,7 +30,21 @@
 
         </div>
     </div>
-    <pre id="listaUsers"></pre>
+    <table>
+        <thead>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Ações</th>
+        </thead>
+
+        <tbody id="listaUsers">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
     <a id="addUser" class="rounded-full bg-primary text-white px-4 py-3 fixed bottom-0 right-0 hover:shadow-inner"> +
     </a>
     <script src="user.js"></script>

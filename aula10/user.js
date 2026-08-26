@@ -4,10 +4,11 @@ var oi = document.getElementById("oi");
 if (oi && userOk) oi.innerHTML = "Olá " + userOk?.nome
 
 var listaUsers = document.getElementById("listaUsers");
-if (listaUsers)
-    listaUsers.innerHTML = JSON.stringify(users,null,4)
-//for(let i=0;i<users.length;i++){ TESTE DO PROFESSOR  
-//  listUsers.innerHTML += JSON.stringify(users[i].nome);}
+if (listaUsers){
+    users.forEach((u) => {
+        console.log(u)
+    });
+}
 var formR = document.getElementById("formRegister");
 formR?.addEventListener("click", (e) => {// ? igual um if, testa a variavel
     e.preventDefault(); //impede de atualizar a tela

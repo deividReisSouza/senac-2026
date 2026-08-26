@@ -535,8 +535,8 @@ a {
   background-color: #f2f9ac;
 }
 
-.bg-red{
-  background-color: #a00505;
+.bg-black-50 {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* =========================================================
@@ -578,6 +578,10 @@ a {
   background-color: #f2f9ac;
 }
 
+.hover\:bg-black-50:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 /* =========================================================
    14. BACKGROUND + FOCUS
    ========================================================= */
@@ -609,6 +613,10 @@ a {
   background-color: #f2f9ac;
 }
 
+.focus\:bg-black-50:focus {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 /* =========================================================
    15. BACKGROUND + ACTIVE
    ========================================================= */
@@ -638,6 +646,10 @@ a {
 
 .active\:bg-prices:active {
   background-color: #f2f9ac;
+}
+
+.active\:bg-black-50:active {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* =========================================================
