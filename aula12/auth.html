@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Autenticação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="h-full flex">
+        <div class="fixed top-0 right-0 bottom-0 left-0 bg-primary bg-black-50 items-center justify-center shadow-md 
+    column flex text-white ">
+    <div class="relative max-w-md w-full p-5 
+        bg-primary rounded-lg shadow-md flex column">
+            <a href="index.html" class="mb-5 text-white">Voltar</a>
+
+            <form class="flex column text-white">
+                Email:<input id="cMailLogin" type="email" placeholder="@gmail.com" /><br>
+
+                Senha:<input id="cPassLogin" type="password" placeholder="senhA1@" /><br>
+
+                <a id="formLogin"  class=" cursor-pointer mt-5 bg-buttom text-white text-center rounded-md py-2">Entrar</a>
+            </form>
+            <p id="rUserIncorrect"></p>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="user.js"></script>

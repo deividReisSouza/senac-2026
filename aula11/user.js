@@ -22,6 +22,8 @@ if (listaUsers) {
         listaUsers.appendChild(tr);
     });
 }
+
+var botoesV = document.querySelectorAll
 var formR = document.getElementById("formRegister");
 formR?.addEventListener("click", (e) => {// ? igual um if, testa a variavel
     e.preventDefault(); //impede de atualizar a tela
